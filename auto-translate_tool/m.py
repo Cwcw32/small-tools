@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'm.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(952, 1001)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.clipboard = QtWidgets.QTextBrowser(self.centralwidget)
+        self.clipboard.setGeometry(QtCore.QRect(30, 130, 681, 381))
+        self.clipboard.setObjectName("clipboard")
+        self.transboard = QtWidgets.QTextBrowser(self.centralwidget)
+        self.transboard.setGeometry(QtCore.QRect(30, 540, 681, 391))
+        self.transboard.setObjectName("transboard")
+        self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(40, 10, 800, 80))
+        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.start = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        self.start.setObjectName("start")
+        self.horizontalLayout.addWidget(self.start)
+        self.setting = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        self.setting.setObjectName("setting")
+        self.horizontalLayout.addWidget(self.setting)
+        self.cold = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        self.cold.setObjectName("cold")
+        self.horizontalLayout.addWidget(self.cold)
+        self.history = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        self.history.setObjectName("history")
+        self.horizontalLayout.addWidget(self.history)
+        self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(770, 220, 160, 222))
+        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.retrans = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.retrans.setObjectName("retrans")
+        self.verticalLayout.addWidget(self.retrans)
+        self.jietu = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.jietu.setObjectName("jietu")
+        self.verticalLayout.addWidget(self.jietu)
+        self.api = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.api.setObjectName("api")
+        self.verticalLayout.addWidget(self.api)
+        self.zhanghu = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.zhanghu.setObjectName("zhanghu")
+        self.verticalLayout.addWidget(self.zhanghu)
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(30, 100, 108, 24))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(30, 510, 108, 24))
+        self.label_2.setObjectName("label_2")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 952, 37))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.start.setText(_translate("MainWindow", "开始运行"))
+        self.setting.setText(_translate("MainWindow", "快捷键设置"))
+        self.cold.setText(_translate("MainWindow", "窗口置顶"))
+        self.history.setText(_translate("MainWindow", "历史记录"))
+        self.retrans.setText(_translate("MainWindow", "重新翻译"))
+        self.jietu.setText(_translate("MainWindow", "截图识别"))
+        self.api.setText(_translate("MainWindow", "API设置"))
+        self.zhanghu.setText(_translate("MainWindow", "账户信息"))
+        self.label.setText(_translate("MainWindow", "原文"))
+        self.label_2.setText(_translate("MainWindow", "翻译结果"))
+
